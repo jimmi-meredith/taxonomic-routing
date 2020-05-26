@@ -18,7 +18,7 @@ const App = () => {
             <Route exact path='/' component={Home} />
             <Route path='/list/:rankName' component={RankList} />
             <Route path='/rank/:rankName/:rankItem' component={RankItem} />
-            <Route path='/species/:id' component={Species} />
+            <Route path='/species/:speciesId' component={Species} />
           </div>
         </div>
       </div>

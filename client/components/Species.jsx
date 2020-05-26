@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import species from '../../data/species'
 
 const Species = ({ match }) => {
-  const { speciesId } = match.params
+  const speciesId = Number(match.params.speciesId)
   const speciesDetails = species.filter(item => item.id === speciesId)[0]
+
   return (
     <div className='species'>
       <h2>{speciesDetails.name}</h2>
