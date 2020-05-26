@@ -8,6 +8,7 @@ const rankList = Object.keys(ranks)
 const Nav = () => {
   return (
     <div className='nav'>
+      <h2>Nav</h2>
       {rankList.map(rank => {
         return rank
       })}
