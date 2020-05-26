@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import ranks from '../../data/ranks'
 
@@ -10,7 +11,11 @@ const Nav = () => {
     <div className='nav'>
       <h2>Nav</h2>
       {rankList.map(rankName => {
-        return <li>{rankName}</li>
+        return (
+          <li>
+            <Link to={`/list/${rankName}`}>{rankName}</Link>
+          </li>
+        )
       })}
     </div>
   )
