@@ -9,8 +9,8 @@ const Nav = () => {
   return (
     <div className='nav'>
       <h2>Nav</h2>
-      {rankList.map(rank => {
-        return rank
+      {rankList.map(rankName => {
+        return <li>{rankName}</li>
       })}
     </div>
   )

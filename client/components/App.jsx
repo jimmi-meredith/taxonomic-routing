@@ -9,7 +9,6 @@ const App = () => {
     <Router>
       <div className='app'>
         <h1>Navigating the taxonomic ranks</h1>
-
         <div className='container'>
           <Route path='/' component={Nav} />
           <div className='content'>
