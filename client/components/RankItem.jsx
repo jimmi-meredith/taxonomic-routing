@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import ranks from '../../data/ranks'
 
@@ -10,6 +11,7 @@ const RankItem = ({ match }) => {
     <div className='rank-list'>
       <h2>{rankName}</h2>
       <p>{rankDetails.description}</p>
+      <Link to={`${match.url}/species`}>Show species</Link>
     </div>
   )
 }
