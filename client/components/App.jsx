@@ -4,6 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 import RankList from './RankList'
+import RankItem from './RankItem'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <div className='content'>
             <Route exact path='/' component={Home} />
             <Route path='/list/:rankName' component={RankList} />
+            <Route path='/rank/:rankName/:rankItem' component={RankItem} />
           </div>
         </div>
       </div>
