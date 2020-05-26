@@ -1,7 +1,13 @@
 import React from 'react'
 
-const Nav = () => {
+import ranks from '../../data/ranks'
 
+const Nav = () => {
+  return (
+    <div className='nav'>
+
+    </div>
+  )
 }
 
 export default Nav
