@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import ranks from '../../data/ranks'
 
@@ -10,7 +11,11 @@ const RankList = ({ match }) => {
       <h2>{rankName}</h2>
       <ul>
         {rankList.map(rankItem => {
-          return <li><Link to={`/rank/${rankName}/${rankItem.name}`}>{rankItem.name}</Link></li>
+          return (
+            <li>
+              <Link to={`/rank/${rankName}/${rankItem.name}`}>{rankItem.name}</Link>
+            </li>
+          )
         })}
       </ul>
     </div>
