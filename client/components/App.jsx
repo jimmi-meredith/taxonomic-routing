@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
+// importing Components
 import Nav from './Nav'
 import Home from './Home'
 import RankList from './RankList'
@@ -9,10 +10,12 @@ import Species from './Species'
 
 const App = () => {
   return (
+    // Only need to use 'Router' once, and in the App component
     <Router>
       <div className='app'>
         <h1>Navigating the taxonomic ranks</h1>
         <div className='container'>
+          {/* Defining the route paths for each component that needs a new page */}
           <Route path='/' component={Nav} />
           <div className='content'>
             <Route exact path='/' component={Home} />
