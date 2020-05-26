@@ -10,13 +10,16 @@ const Nav = () => {
   return (
     <div className='nav'>
       <h2>Nav</h2>
-      {rankList.map((rankName, key) => {
-        return (
-          <li key={key}>
-            <Link to={`/list/${rankName}`}>{rankName}</Link>
-          </li>
-        )
-      })}
+      <ul>
+        <li><Link to='/'>Home</Link></li>
+        {rankList.map((rankName, key) => {
+          return (
+            <li key={key}>
+              <Link to={`/list/${rankName}`}>{rankName}</Link>
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
