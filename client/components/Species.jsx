@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import species from '../../data/species'
 
 const Species = ({ match }) => {
+  // id in params must be changed to a number
   const speciesId = Number(match.params.speciesId)
   const speciesDetails = species.filter(item => item.id === speciesId)[0]
 

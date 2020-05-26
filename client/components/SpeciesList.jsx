@@ -7,6 +7,7 @@ import { nonPlural } from '../utilities'
 const SpeciesList = ({ match }) => {
   const { rankName, rankItem } = match.params
   const speciesMatches = species.filter(item => {
+    // nonPlural function used so it can match the info in the species data
     return item[nonPlural(rankName)] === rankItem
   })
 

@@ -19,6 +19,7 @@ const App = () => {
           <Route path='/' component={Nav} />
           <div className='content'>
             <Route exact path='/' component={Home} />
+            {/* params here must match deconstructed params in components */}
             <Route path='/list/:rankName' component={RankList} />
             <Route path='/rank/:rankName/:rankItem' component={RankItem} />
             <Route path='/species/:speciesId' component={Species} />

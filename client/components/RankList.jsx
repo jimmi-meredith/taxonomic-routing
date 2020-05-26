@@ -5,6 +5,7 @@ import ranks from '../../data/ranks'
 
 const RankList = ({ match }) => {
   const { rankName } = match.params
+  // rankList is an array of the ranks in the ranks object
   const rankList = ranks[rankName]
 
   return (
