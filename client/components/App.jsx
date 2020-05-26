@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
+import Nav from './Nav'
 import Home from './Home'
 
 const App = () => {
@@ -8,7 +9,13 @@ const App = () => {
     <Router>
       <div className='app'>
         <h1>Navigating the taxonomic ranks</h1>
-        <Route exact path='/' component={Home} />
+
+        <div className='container'>
+          <Route path='/' component={Nav} />
+          <div>
+            <Route exact path='/' component={Home} />
+          </div>
+        </div>
       </div>
     </Router>
   )
