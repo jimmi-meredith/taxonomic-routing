@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.nav {
+  margin-right: 30px;
+}
+
+.content {
+  flex: 3;
+}
