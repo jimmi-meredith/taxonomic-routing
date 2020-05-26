@@ -1,3 +1,4 @@
+// function with takes a classification and returns the singular version of each
 export const nonPlural = (classification) => {
   switch (classification) {
     case 'kingdoms':
