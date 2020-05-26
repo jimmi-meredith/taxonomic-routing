@@ -10,9 +10,9 @@ const Nav = () => {
   return (
     <div className='nav'>
       <h2>Nav</h2>
-      {rankList.map(rankName => {
+      {rankList.map((rankName, key) => {
         return (
-          <li>
+          <li key={key}>
             <Link to={`/list/${rankName}`}>{rankName}</Link>
           </li>
         )

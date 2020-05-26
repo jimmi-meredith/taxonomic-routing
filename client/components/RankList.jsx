@@ -10,9 +10,9 @@ const RankList = ({ match }) => {
     <div className='rank-list'>
       <h2>{rankName}</h2>
       <ul>
-        {rankList.map(rankItem => {
+        {rankList.map((rankItem, key) => {
           return (
-            <li>
+            <li key={key}>
               <Link to={`/rank/${rankName}/${rankItem.name}`}>{rankItem.name}</Link>
             </li>
           )
