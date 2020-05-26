@@ -13,7 +13,7 @@ const RankItem = ({ match }) => {
       <h2>{rankName}</h2>
       <p>{rankDetails.description}</p>
       <Link to={`${match.url}/species`}>Show species</Link>
-      <Route path='rank/:rankName/:rankItem/species' component={SpeciesList} />
+      <Route path='/rank/:rankName/:rankItem/species' component={SpeciesList} />
     </div>
   )
 }
